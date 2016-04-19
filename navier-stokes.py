@@ -6,9 +6,9 @@ from fluid_visualization import plot_density_grids
 
 time_limit = 20 # the number of time steps to simulate
 size = 39 # the width and height of the simulation area in elements
-fluid_diffusion_rate = 0.001 # how quickly the fluid spreads through its medium
-flow_diffusion_rate = 0.001 # how quickly flows spread through the medium (a measure of viscosity)
-stencil = [[2, 0], [0, 2], [-2, 0], [0, -2]]
+fluid_diffusion_rate = 0.0001 # how quickly the fluid spreads through its medium
+flow_diffusion_rate = 0.0001 # how quickly flows spread through the medium (a measure of viscosity)
+stencil = [[3, 0], [0, 3], [-3, 0], [0, -3]]
 
 # Compute the weighted average of start and end, with higher weights favoring end.
 def interpolate(start, weight, end):
